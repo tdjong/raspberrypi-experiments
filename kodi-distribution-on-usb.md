@@ -1,8 +1,12 @@
-# Getting a Linux distribution with Kodi (OpenElec, LibreElec or OSMC) to run and write to a USB drive instead of the micro-sd card, which is required for booting the Pi
+# Getting a Linux distribution with Kodi for Raspberry Pi on USB drive
+Several distributions exist (OpenElec, LibreElec or OSMC) for Raspberry Pi. 
+The Pi requires to boot from SD card. However to limit writes to SD card, I want to run and write to a USB drive instead of the micro-sd card.
 
 ## OSMC - FAQ - Boot off an USB drive or NFS
 
 Yes, they even build the option into the installer.
+However the correct option to choose during the installer is not clear.
+[Blog post explaining this option](http://www.averagemanvsraspberrypi.com/2015/10/install-osmc-on-a-usb-stick.html)
 
 ### Background for booting from different device
 
@@ -29,5 +33,3 @@ The Pi is capable of doubling that by changing/enabling a setting in /boot/confi
  # with max_usb_current = 1 an extra 0.6 mA is possible, allowing external USB disk storage
   max_usb_current=1
 ################################################################################
-
-
